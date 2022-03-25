@@ -1,45 +1,50 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# Hypera
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+###  All app media (mainly the backgrounds and some details) made by me in Aseprite, Canvas and Adobe Illustrator!
+#### Hypera is a Social Network, made in Java, with extra detailing in CSS
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+<br>
 
----
+## Screenshots
 
-## Edit a file
+![events](https://github.com/Iovva/Hypera-Social-Network/blob/main/screenshots/events.png)
+![friends](https://github.com/Iovva/Microsoft-Sql-Server/blob/main/Diagram.png)
+![home](https://github.com/Iovva/Microsoft-Sql-Server/blob/main/Diagram.png)
+![login](https://github.com/Iovva/Microsoft-Sql-Server/blob/main/Diagram.png)
+![messages](https://github.com/Iovva/Microsoft-Sql-Server/blob/main/Diagram.png)
+![messages](https://github.com/Iovva/Microsoft-Sql-Server/blob/main/Diagram.png)
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+<br>
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+## Features
+Hypera is very rich in the number of available features, but also completely bug-free in said features.
+The user can do all of the following:
+- Sign up;
+- Log in;
+- View a customised Home Page;
+- Change their profile photo (also supports GIFS!);
+- Add friends;
+- Accept/Reject friend requests;
+- Block other users;
+- Search for other users;
+- Send/Recieve messages, in an interface simillar to WhatsApp/Messenger;
+- Reply to said messages;
+- Schedule events;
+- Subscribe/Unsubscribe to events;
+- Generate the following statistics:
+  - New friends and messsages recieved (in a specific period of time)
+  - Messsages recieved from a specific friend (in a specific period of time)
+- Log out;
+- Admire the app's beautiful, handcrafted UX/UI design!
 
----
+<br>
 
-## Create a file
+## Frameworks used
+It uses JavaFX for the graphic design and PostgreSql for the app database.
 
-Next, you’ll add a new file to this repository.
+<br>
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+## How to install
+If one may desire to get Hypera up and running on their PC, I've included an sql script, "script.sql", for generating the required database. Also, you may need to toy around with a module-info.java and Gradle files if you want to make it work!
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
-
----
-
-## Clone a repository
-
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
-
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+Gradle command : gradle wrapper --gradle-version 3.3 .
