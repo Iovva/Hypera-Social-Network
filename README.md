@@ -1,18 +1,19 @@
 # Hypera
 
-###  All app media (mainly the backgrounds and some details) made by me in Aseprite, Canvas and Adobe Illustrator!
+###  All app media (backgrounds, details, etc.) are made by me in Aseprite, Canvas and Adobe Illustrator!
 #### Hypera is a Social Network, made in Java, with extra detailing in CSS
 
 <br>
 
 ## Screenshots
 
+![login](https://github.com/Iovva/Hypera-Social-Network/blob/main/screenshots/login.png)
+![register](https://github.com/Iovva/Hypera-Social-Network/blob/main/screenshots/register.png)
+![home](https://github.com/Iovva/Hypera-Social-Network/blob/main/screenshots/home.gif)
+![friends](https://github.com/Iovva/Hypera-Social-Network/blob/main/screenshots/friends.png)
+![messages](https://github.com/Iovva/Hypera-Social-Network/blob/main/screenshots/messages.png)
 ![events](https://github.com/Iovva/Hypera-Social-Network/blob/main/screenshots/events.png)
-![friends](https://github.com/Iovva/Microsoft-Sql-Server/blob/main/Diagram.png)
-![home](https://github.com/Iovva/Microsoft-Sql-Server/blob/main/Diagram.png)
-![login](https://github.com/Iovva/Microsoft-Sql-Server/blob/main/Diagram.png)
-![messages](https://github.com/Iovva/Microsoft-Sql-Server/blob/main/Diagram.png)
-![messages](https://github.com/Iovva/Microsoft-Sql-Server/blob/main/Diagram.png)
+![statistics](https://github.com/Iovva/Hypera-Social-Network/blob/main/screenshots/statistics.png)
 
 <br>
 
