@@ -1,6 +1,6 @@
 # Hypera
 
-###  ***All app media (backgrounds, details, etc.) are made by me in Aseprite, Canvas and Adobe Illustrator! No external media was used!***
+###  ***All app media (backgrounds, details, etc.) are custom-made by me in Aseprite, Canvas and Adobe Illustrator! No external media was used!***
 <br>
     
 ## Description
