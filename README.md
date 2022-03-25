@@ -1,7 +1,12 @@
 # Hypera
 
-###  All app media (backgrounds, details, etc.) are made by me in Aseprite, Canvas and Adobe Illustrator!
-#### Hypera is a Social Network, made in Java, with extra detailing in CSS
+###  ***All app media (backgrounds, details, etc.) are made by me in Aseprite, Canvas and Adobe Illustrator! No external media was used!***
+<br>
+    
+## Description
+
+#### Hypera is a Social Network, similar to the likes of Instagran or Facebook, made in Java, with extra detailing in CSS. 
+The app is only availabe offline, with only one instance running at a time, but provides a fully functioning interface!
 
 <br>
 
