@@ -1,0 +1,67 @@
+.table-view {
+	-fx-background-color:#2e0b38;
+	-fx-background-radius: 30;
+	-fx-fill: white;
+	-fx-table-cell-border-color: transparent;
+}
+
+.table-view .column-header-background {
+	-fx-background-color:#4a145a;
+	-fx-background-radius: 100;
+	-fx-background-insets: 0 0 10 0;
+	-fx-padding: 0 0 10 0;
+	-fx-effect: dropshadow(two-pass-box, #9c29be ,15,0.0,0.1,3)
+}
+
+.table-view .column-header, .table-view .filler {
+	-fx-size: 40;
+	-fx-border-width: 0 0 10 0;
+	-fx-background-color:transparent;
+}
+
+.table-view .column-header .label {
+	-fx-text-fill:#dfbf86;
+	-fx-font-family: "Times New Roman";
+	-fx-font-size: 21;
+}
+
+.table-row-cell {
+	-fx-background-color:#300c3c;
+	-fx-dark-text-color: #ffffff;
+	-fx-mid-text-color: #ffffff;
+	-fx-light-text-color: #ffffff;
+
+	-fx-border-radius: 30;
+	-fx-font-family: "Times New Roman";
+	-fx-font-size: 19;
+}
+
+.columns{
+	-fx-alignment: center;
+}
+
+.table-view .table-row-cell:selected{
+	-fx-background-color:#5a1670;
+	-fx-dark-text-color: #ffffff;
+	-fx-mid-text-color: #ffffff;
+	-fx-light-text-color: #ffffff;
+
+	-fx-font-family: "Times New Roman";
+	-fx-font-size: 21;
+	-fx-table-cell-border-color: transparent;
+}
+
+.table-view .label{
+	-fx-font-family: "Times New Roman";
+	-fx-font-size: 19;
+	-fx-text-fill: white;
+}
+
+.table-view .scroll-bar:vertical, .table-view .scroll-bar:horizontal{
+	-fx-opacity: 0;
+	-fx-pref-width: 0;
+}
+
+.table-view .table-row-cell{
+	-fx-background-color: transparent;
+}

@@ -1,0 +1,27 @@
+.date-picker .text-field{
+    -fx-background-color: #2e0b38;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: black;
+
+    -fx-alignment: center;
+    -fx-font-family: "Times New Roman";
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: black;
+    -fx-font-size: 18;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #471356;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: black;
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-background-color: #dfbf86;
+}
+
+.date-picker{
+    -fx-background-color: transparent;
+}

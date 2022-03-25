@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="764.0" prefWidth="1257.0" style="-fx-background-radius: 80; -fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FriendsController">
+   <children>
+      <ImageView fitHeight="765.0" fitWidth="1257.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../local/MainScreens/FriendScreen/friend.png" />
+         </image>
+      </ImageView>
+         <Button fx:id="homeButton" layoutX="64.0" layoutY="181.0" mnemonicParsing="false" onAction="#homeScreenSwitch" opacity="0.0" prefHeight="65.0" prefWidth="167.0" text="Home" />
+         <Button fx:id="friendsButton" layoutX="64.0" layoutY="258.0" mnemonicParsing="false" onAction="#friendsScreenSwitch" opacity="0.0" prefHeight="65.0" prefWidth="167.0" text="Friends" />
+         <Button fx:id="messagesButton" layoutX="64.0" layoutY="335.0" mnemonicParsing="false" onAction="#messagesScreenSwitch" opacity="0.0" prefHeight="65.0" prefWidth="167.0" text="Messages" />
+         <Button fx:id="eventsButton" layoutX="64.0" layoutY="409.0" mnemonicParsing="false" onAction="#eventsScreenSwitch" opacity="0.0" prefHeight="65.0" prefWidth="167.0" text="Events" />
+         <Button fx:id="statisticsButton" layoutX="64.0" layoutY="489.0" mnemonicParsing="false" onAction="#statisticsScreenSwitch" opacity="0.0" prefHeight="65.0" prefWidth="167.0" text="Statistics" />
+         <Button fx:id="closeButton" layoutX="1183.0" layoutY="27.0" mnemonicParsing="false" onAction="#closeWindow" opacity="0.0" prefHeight="48.0" prefWidth="50.0" text="Close" />
+      <TextField fx:id="searchField" layoutX="325.0" layoutY="22.0" prefHeight="49.0" prefWidth="613.0" promptText="Insert first and last name" style="-fx-background-color: #300c3c; -fx-mid-text-color: #ffffff; -fx-background-radius: 10;">
+         <font>
+            <Font name="Times New Roman" size="26.0" />
+         </font>
+      </TextField>
+      <Button fx:id="removeButtonID" layoutX="325.0" layoutY="649.0" mnemonicParsing="false" onAction="#removeButton" prefHeight="49.0" prefWidth="528.0" style="-fx-background-color: #4a145a; -fx-background-radius: 10;" text="Remove Friend" textFill="#dfbf86" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Button>
+      <TableView fx:id="friendsView" layoutX="325.0" layoutY="181.0" onMouseClicked="#friendsClicked" prefHeight="429.0" prefWidth="528.0" stylesheets="@../../../local/MainScreens/FriendScreen/friend.css">
+         <placeholder>
+            <Label text="No friends" />
+         </placeholder>
+         <columns>
+            <TableColumn fx:id="friendsPictureColumn" editable="false" prefWidth="67.0" reorderable="false" resizable="false" styleClass="columns" />
+          <TableColumn fx:id="friendsFirstNameColumn" editable="false" prefWidth="109.0" reorderable="false" resizable="false" styleClass="columns" text="First Name" />
+          <TableColumn fx:id="friendsLastNameColumn" editable="false" prefWidth="125.0" reorderable="false" resizable="false" styleClass="columns" text="Last Name" />
+            <TableColumn fx:id="friendsDateColumn" editable="false" prefWidth="216.0" reorderable="false" resizable="false" styleClass="columns" text="Since" />
+        </columns>
+      </TableView>
+      <TableView fx:id="sentRequestsTable" layoutX="876.0" layoutY="181.0" onMouseClicked="#toRequestsClicked" prefHeight="202.0" prefWidth="349.0" stylesheets="@../../../local/MainScreens/FriendScreen/friend.css">
+         <placeholder>
+            <Label text="You don't have any pending friend request !">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </placeholder>
+         <columns>
+            <TableColumn fx:id="toColumn" editable="false" prefWidth="223.0" reorderable="false" resizable="false" styleClass="columns" text="To" />
+            <TableColumn fx:id="toStatusColumn" editable="false" minWidth="0.0" prefWidth="121.0" reorderable="false" resizable="false" styleClass="columns" text="Status" />
+         </columns>
+      </TableView>
+      <TableView fx:id="receivedRequestsTable" layoutX="876.0" layoutY="409.0" onMouseClicked="#fromRequestsClicked" prefHeight="202.0" prefWidth="349.0" stylesheets="@../../../local/MainScreens/FriendScreen/friend.css">
+         <placeholder>
+            <Label text="No friend requests received !" />
+         </placeholder>
+         <columns>
+            <TableColumn fx:id="fromColumn" editable="false" prefWidth="226.0" reorderable="false" resizable="false" styleClass="columns" text="From" />
+            <TableColumn fx:id="fromStatusColumn" editable="false" minWidth="0.0" prefWidth="113.0" reorderable="false" resizable="false" styleClass="columns" text="Status" />
+         </columns>
+      </TableView>
+      <Button layoutX="956.0" layoutY="22.0" mnemonicParsing="false" onAction="#addButton" prefHeight="49.0" prefWidth="142.0" style="-fx-background-color: #4a145a; -fx-background-radius: 10;" text="Add Friend" textFill="#dfbf86">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="acceptButtonID" layoutX="876.0" layoutY="649.0" mnemonicParsing="false" onAction="#acceptButton" prefHeight="49.0" prefWidth="104.0" style="-fx-background-color: #4a145a; -fx-background-radius: 10;" text="Accept" textFill="#dfbf86">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="denyButtonID" layoutX="999.0" layoutY="649.0" mnemonicParsing="false" onAction="#denyButton" prefHeight="49.0" prefWidth="104.0" style="-fx-background-color: #4a145a; -fx-background-radius: 10;" text="Deny" textFill="#dfbf86">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButtonID" layoutX="1121.0" layoutY="649.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="49.0" prefWidth="104.0" style="-fx-background-color: #4a145a; -fx-background-radius: 10;" text="Cancel" textFill="#dfbf86">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Button>
+      <Label fx:id="statusFound" alignment="CENTER_RIGHT" layoutX="582.0" layoutY="37.0" prefHeight="19.0" prefWidth="335.0" style="-fx-text-fill: #ffffff;" text="status">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="510.0" layoutY="102.0" style="-fx-text-fill: #e9b65c;" text="Friends">
+         <font>
+            <Font name="Times New Roman Bold" size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="942.0" layoutY="102.0" style="-fx-text-fill: #e9b65c;" text="Requests">
+         <font>
+            <Font name="Times New Roman Bold" size="44.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

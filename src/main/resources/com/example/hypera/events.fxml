@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.Label?>
+<AnchorPane prefHeight="764.0" prefWidth="1257.0" style="-fx-background-radius: 80; -fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EventsController">
+   <children>
+      <ImageView fitHeight="765.0" fitWidth="1257.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../local/MainScreens/EventScreen/event.png" />
+         </image>
+      </ImageView>
+         <Button fx:id="homeButton" layoutX="64.0" layoutY="181.0" mnemonicParsing="false" onAction="#homeScreenSwitch" opacity="0.0" prefHeight="65.0" prefWidth="167.0" text="Home" />
+         <Button fx:id="friendsButton" layoutX="64.0" layoutY="258.0" mnemonicParsing="false" onAction="#friendsScreenSwitch" opacity="0.0" prefHeight="65.0" prefWidth="167.0" text="Friends" />
+         <Button fx:id="messagesButton" layoutX="64.0" layoutY="335.0" mnemonicParsing="false" onAction="#messagesScreenSwitch" opacity="0.0" prefHeight="65.0" prefWidth="167.0" text="Messages" />
+         <Button fx:id="eventsButton" layoutX="64.0" layoutY="409.0" mnemonicParsing="false" onAction="#eventsScreenSwitch" opacity="0.0" prefHeight="65.0" prefWidth="167.0" text="Events" />
+         <Button fx:id="statisticsButton" layoutX="64.0" layoutY="489.0" mnemonicParsing="false" onAction="#statisticsScreenSwitch" opacity="0.0" prefHeight="65.0" prefWidth="167.0" text="Statistics" />
+         <Button fx:id="closeButton" layoutX="1183.0" layoutY="27.0" mnemonicParsing="false" onAction="#closeWindow" opacity="0.0" prefHeight="48.0" prefWidth="50.0" text="Close" />
+      <TableView fx:id="participantsTable" layoutX="924.0" layoutY="105.0" prefHeight="628.0" prefWidth="273.0" stylesheets="@../../../local/MainScreens/EventScreen/event.css">
+         <placeholder>
+            <Label text="No participants at this event." />
+         </placeholder>
+         <columns>
+            <TableColumn fx:id="participantsNameColumn" editable="false" prefWidth="272.0" resizable="false" text="Participants" />
+         </columns>
+      </TableView>
+      <TextArea fx:id="nameField" layoutX="317.0" layoutY="104.0" prefHeight="48.0" prefWidth="209.0" promptText="Name" stylesheets="@../../../local/MainScreens/EventScreen/event.css" wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="descriptionField" layoutX="317.0" layoutY="240.0" prefHeight="48.0" prefWidth="209.0" promptText="Description" stylesheets="@../../../local/MainScreens/EventScreen/event.css" wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="locationField" layoutX="317.0" layoutY="172.0" prefHeight="48.0" prefWidth="209.0" promptText="Location" stylesheets="@../../../local/MainScreens/EventScreen/event.css" wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </TextArea>
+      <DatePicker fx:id="dateField" layoutX="318.0" layoutY="311.0" prefHeight="54.0" prefWidth="209.0" promptText="Date" stylesheets="@../../../local/MainScreens/EventScreen/event.css" />
+      <TextArea fx:id="organizerField" layoutX="317.0" layoutY="422.0" prefHeight="40.0" prefWidth="209.0" promptText="Organizer" stylesheets="@../../../local/MainScreens/EventScreen/event.css" wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="createEventButton" layoutX="306.0" layoutY="576.0" mnemonicParsing="false" onAction="#createEventButtonClicked" prefHeight="76.0" prefWidth="235.0" style="-fx-background-color: transparent;" text="Create Event" textFill="#dfbf86">
+         <font>
+            <Font name="Times New Roman" size="31.0" />
+         </font></Button>
+      <Button fx:id="subscribeButton" layoutX="303.0" layoutY="666.0" mnemonicParsing="false" onAction="#subscribeButtonClicked" prefHeight="76.0" prefWidth="235.0" style="-fx-background-color: transparent;" text="Subscribe" textFill="#dfbf86">
+         <font>
+            <Font name="Times New Roman" size="34.0" />
+         </font></Button>
+      <TableView fx:id="eventsTable" layoutX="573.0" layoutY="106.0" onMouseClicked="#eventsTableClicked" prefHeight="628.0" prefWidth="334.0" stylesheets="@../../../local/MainScreens/EventScreen/event.css">
+         <placeholder>
+            <Label text="No events nearby." />
+         </placeholder>
+         <columns>
+          <TableColumn fx:id="eventsNameColumn" editable="false" prefWidth="131.0" resizable="false" text="Name" />
+            <TableColumn fx:id="eventsDateColumn" editable="false" prefWidth="196.0" resizable="false" text="Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

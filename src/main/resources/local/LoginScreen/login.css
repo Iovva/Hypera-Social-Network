@@ -1,0 +1,15 @@
+.text-field{
+	-fx-dark-text-color: white;
+	-fx-mid-text-color: white;
+	-fx-light-text-color: white;
+}
+
+.password-field {
+	-fx-dark-text-color: white;
+	-fx-mid-text-color: white;
+	-fx-light-text-color: white;
+}
+
+#login_button{
+	-fx-text-fill: white;
+}

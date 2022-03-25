@@ -1,0 +1,25 @@
+# Created by https://www.gitignore.io/api/java,gradle
+
+*.iml
+.idea/
+out/
+### Java ###
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+### Gradle ###
+*.gradle
+/build/
+/gradle/
+gradlew
+gradlew.bat
+
+### Roby ###
+/main/resources/local/backup
+resources/local/backup/LoginScreen
+*.pdf
+/ProfilePictures

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="619.0" prefWidth="404.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpController">
+   <children>
+      <ImageView fitHeight="619.0" fitWidth="404.0" opacity="0.76" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../local/SignupScreen/signUp.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Text fill="#dfbf86" layoutX="60.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register" textAlignment="CENTER" wrappingWidth="284.501953125">
+         <font>
+            <Font name="Serif Regular" size="58.0" />
+         </font>
+         <effect>
+            <Glow level="0.53" />
+         </effect>
+      </Text>
+      <Text fill="#c1ac6f" layoutX="60.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="your account" textAlignment="CENTER" wrappingWidth="284.501953125">
+         <font>
+            <Font name="Serif Regular" size="25.0" />
+         </font>
+         <effect>
+            <Glow level="0.18" />
+         </effect>
+      </Text>
+      <TextField fx:id="userFirstNameField" alignment="CENTER" layoutX="97.0" layoutY="218.0" prefHeight="45.0" prefWidth="210.0" promptText="First Name" style="-fx-background-color: #140322;" stylesheets="@../../../local/LoginScreen/login.css">
+         <font>
+            <Font name="Serif Regular" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.25" height="35.66" radius="17.33" width="35.66">
+               <color>
+                  <Color red="0.03921568766236305" green="0.003921568859368563" blue="0.0784313753247261" />
+               </color>
+               <input>
+                  <Glow level="0.2" />
+               </input>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <TextField fx:id="userLastNameField" alignment="CENTER" layoutX="98.0" layoutY="276.0" prefHeight="45.0" prefWidth="210.0" promptText="Last Name" style="-fx-background-color: #140322;" stylesheets="@../../../local/LoginScreen/login.css">
+         <font>
+            <Font name="Serif Regular" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.25" height="35.66" radius="17.33" width="35.66">
+               <color>
+                  <Color red="0.03921568766236305" green="0.003921568859368563" blue="0.0784313753247261" />
+               </color>
+               <input>
+                  <Glow level="0.2" />
+               </input>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="97.0" layoutY="335.0" prefHeight="45.0" prefWidth="210.0" promptText="Password" style="-fx-background-color: #140322;" stylesheets="@../../../local/LoginScreen/login.css">
+         <font>
+            <Font name="Serif Regular" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.25" height="35.66" radius="17.33" width="35.66">
+               <color>
+                  <Color red="0.03921568766236305" green="0.003921568859368563" blue="0.0784313753247261" />
+               </color>
+               <input>
+                  <Glow level="0.2" />
+               </input>
+            </InnerShadow>
+         </effect>
+      </PasswordField>
+      <Button id="signUpButton" fx:id="signUpButton" alignment="CENTER" layoutX="98.0" layoutY="439.0" mnemonicParsing="false" onAction="#signUpClick" prefHeight="45.0" prefWidth="210.0" style="-fx-background-color: #280e3d;" stylesheets="@../../../local/LoginScreen/login.css" text="Sign Up" textAlignment="CENTER" textFill="#979797">
+         <font>
+            <Font name="Serif Regular" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow height="26.87" radius="15.865000000000002" spread="0.41" width="38.59">
+               <color>
+                  <Color red="0.2774122953414917" green="0.14254385232925415" blue="0.5921052694320679" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Text fill="#515151" layoutX="151.0" layoutY="526.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="back to login" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Serif Regular" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="backButton" layoutX="140.0" layoutY="507.0" mnemonicParsing="false" onAction="#backClick" opacity="0.0" prefHeight="25.0" prefWidth="126.0" text="back" />
+   </children>
+</AnchorPane>
