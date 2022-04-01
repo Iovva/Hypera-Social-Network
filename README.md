@@ -6,7 +6,7 @@
 ## Description
 
 #### Hypera is a Social Network, similar to the likes of Instagran or Facebook, made in Java, with extra detailing in CSS. 
-The app is only availabe offline, with only one instance running at a time, but provides a fully functioning interface!
+The app is only available offline, with only one instance running at a time, but provides a fully functioning interface!
 
 <br>
 
@@ -51,6 +51,6 @@ It uses JavaFX for the graphic design and PostgreSql for the app database.
 <br>
 
 ## How to install
-If one may desire to get Hypera up and running on their PC, I've included an sql script, "script.sql", for generating the required database. Also, you may need to toy around with a module-info.java and Gradle files if you want to make it work!
+If you may desire to get Hypera up and running on their PC you will need to toy around with a module-info.java and Gradle files to make it work!
 
 Gradle command : gradle wrapper --gradle-version 3.3 .
