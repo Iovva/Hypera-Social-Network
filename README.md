@@ -5,7 +5,7 @@
     
 ## Description
 
-#### Hypera is a Social Network, similar to the likes of Instagran or Facebook, made in Java, with extra detailing in CSS. 
+#### •	Hypera is a fully-functioning social media and social networking platform, built with accessibility and user-experience in mind!
 The app is only available offline, with only one instance running at a time, but provides a fully functioning interface!
 
 <br>
@@ -46,7 +46,8 @@ The user can do all of the following:
 <br>
 
 ## Frameworks used
-It uses JavaFX for the graphic design and PostgreSql for the app database.
+Made entirely using Java, with JavaFX for the GUI and UX design, CSS for styling and a PostgreSQL database for persistent storage.
+
 
 <br>
 
