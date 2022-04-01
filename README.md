@@ -47,11 +47,3 @@ The user can do all of the following:
 
 ## Frameworks used
 Made entirely using Java, with JavaFX for the GUI and UX design, CSS for styling and a PostgreSQL database for persistent storage.
-
-
-<br>
-
-## How to install
-If you may desire to get Hypera up and running on their PC you will need to toy around with a module-info.java and Gradle files to make it work!
-
-Gradle command : gradle wrapper --gradle-version 3.3 .
